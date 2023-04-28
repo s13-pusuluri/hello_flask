@@ -12,12 +12,12 @@
   <div class="nav">
     <img src="static/img/logo.jpg" alt="logo" width="200px" height="100px
         " href="./index.html">
-    <a href="./index.html">Home</a>
-    <a href="./landing.html">Our Products</a>
-    <a href="./aboutus.html">About us</a>
-    <a href="./login.html">Login</a>
-    <a href="./signup.html">Sign up</a>
-    <a href="./chart.html">Stock</a>
+        <a href= "{{ url_for('index') }}"> Home </a>
+        <a href="{{ url_for('landing') }}"> Our Products </a>
+        <a href="{{ url_for('aboutus') }}"> About us </a>
+        <a href="{{ url_for('login') }}"> Login </a>
+        <a href="{{ url_for('signup') }}"> Sign Up </a>
+        <a href="{{ url_for('chart') }}"> Stock </a>
   </div>
 </div>
 <br><br>

@@ -14,12 +14,12 @@
   <div class="navbar">
     <div class="nav">
       <img src="static/img/logo.jpg" alt="logo" width="200px" height="100px" href="./index.html">
-      <a href="./index.html"> Index </a>
-      <a href="../hello_flask/html/landing.html"> Our Products </a>
-      <a href="../hello_flask/html/aboutus.html"> About us </a>
-      <a href="../hello_flask/html/login.html"> Login </a>
-      <a href="../hello_flask/html/signup.html"> Sign Up </a>
-      <a href="../hello_flask/html/chart.html"> Stock </a>
+      <a href= "{{ url_for('index') }}"> Home </a>
+      <a href="{{ url_for('landing') }}"> Our Products </a>
+      <a href="{{ url_for('aboutus') }}"> About us </a>
+      <a href="{{ url_for('login') }}"> Login </a>
+      <a href="{{ url_for('signup') }}"> Sign Up </a>
+      <a href="{{ url_for('chart') }}"> Stock </a>
 
 
       <!-- <a href="./index.html">Home</a>
@@ -54,7 +54,7 @@
         We are committed to providing our customers with quality products and exceptional customer service.</p>
 
 
-      <a href="templates/landing.html" class="btn"><b>Click here to Learn more</b> </a>
+      <a href="{{ url_for('landing') }}" class="btn"><b>Click here to Learn more</b> </a>
     </div>
   </section>
 </body>

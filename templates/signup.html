@@ -11,41 +11,17 @@
 <div class="navbar">
     <div class="nav">
         <img src="static/img/logo.jpg" href="/index.html" alt="logo" width="200px" height="100px">
-        <a href="./index.html">Home</a>
-        <a href="./landing.html">Our Products</a>
-        <a href="./aboutus.html">About us</a>
-        <a href="./login.html">Login</a>
-        <a href="./signup.html">Sign up</a>
-        <a href="./chart.html">Stock</a>
+        <a href= "{{ url_for('index') }}"> Home </a>
+        <a href="{{ url_for('landing') }}"> Our Products </a>
+        <a href="{{ url_for('aboutus') }}"> About us </a>
+        <a href="{{ url_for('login') }}"> Login </a>
+        <a href="{{ url_for('signup') }}"> Sign Up </a>
+        <a href="{{ url_for('chart') }}"> Stock </a>
     </div>
 </div>
 <br><br>
 
 <body>
-    <!-- <div class="form-container">
-        <h2>Sign Up </h2>
-        <form action="">
-            <div class="input-box">
-                <label>Username:</label><br>
-                <input type="text" placeholder="Enter Username" />
-            </div>
-            <div class="input-box">
-                <label>Email:</label><br><br>
-                <input type="email" placeholder="Enter Email" />
-            </div>
-            <div class="input-box">
-                <label>Password:</label><br><br>
-                <input type="password" placeholder="Enter Password" />
-            </div>
-            <div class="input-box">
-                <label>Confirm Password:</label><br><br>
-                <input type="password" placeholder="Confirm Password" />
-            </div>
-            <div class="input-box"><br>
-                <input type="submit" value="Sign Up" />
-            </div>
-        </form>
-    </div> -->
 
     <div class="form-box">
         <h2>Sign up</h2>

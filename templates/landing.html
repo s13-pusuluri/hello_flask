@@ -18,12 +18,12 @@
             <div class="nav">
                 <img src="static/img/logo.jpg" alt="logo" width="200px" height="100px
                 " href="./index.html">     
-                <a href="templates/index.html">Home</a>
-                <a href="templates/landing.html">Our Products</a>
-                <a href="templates/aboutus.html">About us</a>
-                <a href="templates/login.html">Login</a>
-                <a href="templates/signup.html">Sign up</a>
-                <a href="templates/chart.html">Stock</a>
+                <a href= "{{ url_for('index') }}"> Home </a>
+                <a href="{{ url_for('landing') }}"> Our Products </a>
+                <a href="{{ url_for('aboutus') }}"> About us </a>
+                <a href="{{ url_for('login') }}"> Login </a>
+                <a href="{{ url_for('signup') }}"> Sign Up </a>
+                <a href="{{ url_for('chart') }}"> Stock </a>
             </div>
         </div>
 
@@ -31,7 +31,7 @@
             <br>
             Know more about the stock of our products</h2></div>
         <div class="btn">
-            <a href="./chart.html" class="logo"> <i class="fas fa-warehouse"></i> Inventory Chart of Medicines </a>
+            <a href="{{ url_for('chart') }}" class="logo"> <i class="fas fa-warehouse"></i> Inventory Chart of Medicines </a>
         </div>
         <div class="container">
             <h4 class="title"> Shop by Medicines</h4>

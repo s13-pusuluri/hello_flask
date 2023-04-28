@@ -1,6 +1,6 @@
 from flask import Flask
-from flask import render_template
-from flask import render_template,request
+from flask import Flask , render_template , request
+from flask import Flask , redirect, url_for
 import sqlite3
 
 app = Flask(__name__)
@@ -11,7 +11,7 @@ def index():
     return render_template("index.html")
 
 @app.route("/landing")
-def ourproducts():
+def landing():
     return render_template("landing.html")
 
 @app.route("/aboutus")
@@ -45,7 +45,7 @@ conn.commit()
 conn.close()
 
 
-# Route to add a new record (INSERT) user data to the database
+# Route to add a new record (INSERT) user data to the database - Login USER
 @app.route("/login", methods = ['POST', 'GET'])
 def login1():
     # Data will be available from POST submitted by the form
