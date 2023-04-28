@@ -30,6 +30,10 @@ def signup():
 def chart():
     return render_template("chart.html")
 
+@app.route("/")
+def home():
+    return "Hello, Flask.!"
+
 # Route to form used to add a new user for the website
 
 
